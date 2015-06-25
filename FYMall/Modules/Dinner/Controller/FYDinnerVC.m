@@ -47,6 +47,8 @@
     // Do any additional setup after loading the view from its nib.
     [self loadData];
     
+    self.title = @"餐厅详情";
+    
     _adView.imageArray = @[@"baner图1",@"baner图2",@"baner图3",@"baner图4"];
     _adView.autoSlide = YES;
 }
@@ -75,16 +77,16 @@
 //    } failure:^(NSURLSessionDataTask * task, NSError * error) {
 //        NSLog(@"%@", error);
 //    }];
-    [[FYNetwork sharedFYNetwork] HttpGetDinner:@{@"shopid" : _shopID} success:^(id responseObject) {
-        if ([responseObject isKindOfClass:[NSArray class]]) {
-            _dinner = [[FYDinner alloc] initWithDic:responseObject[0]];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                self.title = _dinner.fullname;
-            });
-        }
-    } failure:^(NSError *error) {
-        
-    }];
+//    [[FYNetwork sharedFYNetwork] HttpGetDinner:@{@"shopid" : _shopID} success:^(id responseObject) {
+//        if ([responseObject isKindOfClass:[NSArray class]]) {
+//            _dinner = [[FYDinner alloc] initWithDic:responseObject[0]];
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                self.title = _dinner.fullname;
+//            });
+//        }
+//    } failure:^(NSError *error) {
+//        
+//    }];
 }
 /*
 #pragma mark - Navigation

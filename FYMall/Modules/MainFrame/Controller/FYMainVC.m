@@ -39,8 +39,9 @@ static NSString *Identity = @"MainVCTableCell";
     // Do any additional setup after loading the view from its nib.
     [self setupSubviews];
     
-    _dataArray = [NSMutableArray array];
-    [_tableView.header  beginRefreshing];
+//    _dataArray = [NSMutableArray array];
+    [self loadData];
+//    [_tableView.header  beginRefreshing];
 }
 
 - (void)setupSubviews
@@ -105,10 +106,17 @@ static NSString *Identity = @"MainVCTableCell";
 }
 - (void)loadData
 {
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"DinnerList" ofType:@"plist"];
-//    _dataArray = [NSArray arrayWithContentsOfFile:path];
-    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"DinnerList" ofType:@"plist"];
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
     NSMutableArray *mutableArray = [NSMutableArray array];
+    for (NSDictionary *dic in array) {
+        FYDinner *dinner = [[FYDinner alloc] initWithDic:dic];
+        [mutableArray addObject:dinner];
+    }
+    
+    _dataArray = [NSMutableArray arrayWithArray:mutableArray];
+    
+//    NSMutableArray *mutableArray = [NSMutableArray array];
     
 //    [[HTTPSessionManager sharedInstance] getAllShopInfoWithStart:0 page:1 key:@"" isDesc:YES success:^(NSURLSessionDataTask *task, id responseObject) {
 ////        NSLog(@"getAllShopInfoWithStart success with responseObject : %@", responseObject);

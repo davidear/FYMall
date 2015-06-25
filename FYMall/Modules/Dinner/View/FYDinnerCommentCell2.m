@@ -98,7 +98,8 @@
     
     _avatarImageView.frame = _cellFrame.avatarFrame;
     _avatarImageView.layer.cornerRadius = _cellFrame.avatarFrame.size.height / 2;
-    [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:dinnerComment.avatar] placeholderImage:[UIImage imageNamed:@"图片占位"] options:SDWebImageRetryFailed | SDWebImageLowPriority];
+//    [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:dinnerComment.avatar] placeholderImage:[UIImage imageNamed:@"图片占位"] options:SDWebImageRetryFailed | SDWebImageLowPriority];
+    _avatarImageView.image = [UIImage imageNamed:_cellFrame.dinnerComment.avatar];
     
     _nameLabel.frame = _cellFrame.nameFrame;
     _nameLabel.text = dinnerComment.name;

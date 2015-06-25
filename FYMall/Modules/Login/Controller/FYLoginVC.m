@@ -81,6 +81,10 @@
 - (IBAction)login:(id)sender {
     NSLog(@"start login");
     if (_userNameLoginTextField.text.length != 0 &_passwordLoginTextField.text.length != 0) {
+         [FYtool showMsg:@"登陆成功"];
+         NSDictionary *dic = @{@"oldStatus" : @(Connecting), @"newStatus" : @(Connected), @"token" : @"123", @"userid" : @"2"};
+         [[NSNotificationCenter defaultCenter] postNotificationName:kFYLoginStatusChangedNotification object:self userInfo:dic];
+        
 //         [[HTTPSessionManager sharedInstance] userLoginWithPhone:_userNameLoginTextField.text password:_passwordLoginTextField.text rememberMe:@"1" success:^(NSURLSessionDataTask *task, id responseObject) {
 //             NSLog(@"%@",responseObject);
 ////             NSLog(@"login success");

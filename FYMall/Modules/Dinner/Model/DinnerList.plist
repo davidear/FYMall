@@ -3,7 +3,9 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>name</key>
+		<key>shopid</key>
+		<string>1</string>
+		<key>fullname</key>
 		<string>黄金海岸餐厅</string>
 		<key>distance</key>
 		<string>即将自动排队</string>
@@ -11,11 +13,13 @@
 		<string>海鲜特色餐厅，新鲜美味</string>
 		<key>recommend</key>
 		<string>特色推荐：关东海参</string>
-		<key>image</key>
+		<key>logo</key>
 		<string>菜品1</string>
 	</dict>
 	<dict>
-		<key>name</key>
+		<key>shopid</key>
+		<string>2</string>
+		<key>fullname</key>
 		<string>白云山广式餐厅</string>
 		<key>distance</key>
 		<string>直行15米</string>
@@ -23,11 +27,13 @@
 		<string>海鲜特色餐厅，新鲜美味</string>
 		<key>recommend</key>
 		<string>特色推荐：虾饺</string>
-		<key>image</key>
+		<key>logo</key>
 		<string>菜品2</string>
 	</dict>
 	<dict>
-		<key>name</key>
+		<key>shopid</key>
+		<string>3</string>
+		<key>fullname</key>
 		<string>全聚德大饭店</string>
 		<key>distance</key>
 		<string>直行50米</string>
@@ -35,11 +41,13 @@
 		<string>传统美食，新鲜美味</string>
 		<key>recommend</key>
 		<string>特色推荐：烤鸭</string>
-		<key>image</key>
+		<key>logo</key>
 		<string>菜品3</string>
 	</dict>
 	<dict>
-		<key>name</key>
+		<key>shopid</key>
+		<string>4</string>
+		<key>fullname</key>
 		<string>东来顺大饭店</string>
 		<key>distance</key>
 		<string>直行200米</string>
@@ -47,7 +55,7 @@
 		<string>地方特色，新鲜美味</string>
 		<key>recommend</key>
 		<string>特色推荐：红烧乳鸽</string>
-		<key>image</key>
+		<key>logo</key>
 		<string>菜品4</string>
 	</dict>
 </array>

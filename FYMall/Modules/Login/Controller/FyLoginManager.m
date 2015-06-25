@@ -181,6 +181,55 @@ single_implementation(FYLoginManager)
 {
     NSString *userid = aNotification.userInfo == nil ? [FYAccountTool sharedFYAccountTool].account.userid : aNotification.userInfo[@"userid"];
     NSString *token = aNotification.userInfo == nil ? [FYAccountTool sharedFYAccountTool].account.token : aNotification.userInfo[@"token"];
+    /*
+     //age = "<null>";
+     //"bluetooth_key" = "B3B0835B-F2D8-4A0A-AE71-E778454A";
+     //city = "<null>";
+     //country = "<null>";
+     //created = "2015-05-12 03:12:59";
+     //deviceToken = "";
+     //district = "<null>";
+     //email = "<null>";
+     //"is_payment" = 0;
+     //lasttime = "<null>";
+     //"map_latitude" = "108.23";
+     //"map_longitude" = "23.12";
+     //modified = "2015-05-12 21:12:59";
+     //msgmode = 0;
+     //otherchart = "<null>";
+     //password = 438e56d6a0eaab518a7b43148b89ba8c;
+     //phone = 18974968512;
+     //"phone_info" = "<null>";
+     //"phone_os" = "8.3";
+     //preference = "<null>";
+     //province = "<null>";
+     //"pwd_answer" = "<null>";
+     //"pwd_question" = "<null>";
+     //qq = "<null>";
+     //remark = "<null>";
+     //sex = 1;
+     //"user_avatar" = "<null>";
+     //"user_config" = "<null>";
+     //"user_desc" = "<null>";
+     //userid = 5551fc5b8c35e;
+     //username = "\U672a\U77e5\U7528\U6237";
+     //userstatus = 2;
+     //wechart = "<null>";
+     //weibo = "<null>";
+     
+     @property (readonly, nonatomic) NSString *username;
+     @property (readonly, nonatomic) NSString *password;
+     
+     @property (readonly, nonatomic) NSString *userid;
+     @property (readonly, nonatomic) NSString *avatar;
+     @property (readonly, nonatomic) NSString *phone;
+     */
+    
+    [[FYAccountTool sharedFYAccountTool] saveAccount:[[FYAccount alloc] initWithDic:@{@"username" : @"纵横四海", @"userid" : @"5551fc5b8c35e", @"user_avatar" : [NSNull null], @"password" : @"438e56d6a0eaab518a7b43148b89ba8c", @"phone" : @"18974968512"}]];
+    [FYAccountTool sharedFYAccountTool].account.token = token;             //dfy
+    //
+    [[NSNotificationCenter defaultCenter] postNotificationName:kFYAccountInfoNotification object:nil];
+    
 //    [[HTTPSessionManager sharedInstance] getUserInfoWithUserID:userid token:token success:^(NSURLSessionDataTask *task, id responseObject) {
 //        NSLog(@"visitorSignUpWithSuccess success with responseObject : %@", responseObject);
 //        if ([responseObject isKindOfClass:[NSDictionary class]]) {

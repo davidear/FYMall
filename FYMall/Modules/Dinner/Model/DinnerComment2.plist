@@ -3,9 +3,13 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>commentId</key>
+		<string>1</string>
+		<key>userid</key>
+		<string>1</string>
 		<key>name</key>
 		<string>小雨儿啦啦</string>
-		<key>avatarUrl</key>
+		<key>avatar</key>
 		<string>评论头像1</string>
 		<key>detail</key>
 		<string>是的啊，排队太久了，不过很好吃</string>
@@ -15,9 +19,13 @@
 		<string>100</string>
 	</dict>
 	<dict>
+		<key>commentId</key>
+		<string>2</string>
+		<key>userid</key>
+		<string>2</string>
 		<key>name</key>
 		<string>泽宇麻麻</string>
-		<key>avatarUrl</key>
+		<key>avatar</key>
 		<string>评论头像2</string>
 		<key>detail</key>
 		<string>今天发现门口的摆设换了，漂亮多了，我很喜欢，大家觉得呢？</string>
@@ -27,9 +35,13 @@
 		<string>88</string>
 	</dict>
 	<dict>
+		<key>commentId</key>
+		<string>3</string>
+		<key>userid</key>
+		<string>3</string>
 		<key>name</key>
 		<string>爱运动的MAN</string>
-		<key>avatarUrl</key>
+		<key>avatar</key>
 		<string>评论头像3</string>
 		<key>detail</key>
 		<string>今天吃饭遇到女神了，不敢搭讪，大家给点勇气吧！</string>
@@ -39,9 +51,13 @@
 		<string>99</string>
 	</dict>
 	<dict>
+		<key>commentId</key>
+		<string>4</string>
+		<key>userid</key>
+		<string>4</string>
 		<key>name</key>
 		<string>阳光陈</string>
-		<key>avatarUrl</key>
+		<key>avatar</key>
 		<string>评论头像4</string>
 		<key>detail</key>
 		<string>第一次带喜欢的任来吃饭，想来点浪漫的表白，等我行动了以后，拜托大家多给点支持，给点热烈的气氛！我在窗边的位置，感谢感谢！</string>
@@ -51,9 +67,13 @@
 		<string>138</string>
 	</dict>
 	<dict>
+		<key>commentId</key>
+		<string>5</string>
+		<key>userid</key>
+		<string>5</string>
 		<key>name</key>
 		<string>霹雳巴拉</string>
-		<key>avatarUrl</key>
+		<key>avatar</key>
 		<string>评论头像5</string>
 		<key>detail</key>
 		<string>虾米虾米</string>
@@ -63,9 +83,13 @@
 		<string>1</string>
 	</dict>
 	<dict>
+		<key>commentId</key>
+		<string>6</string>
+		<key>userid</key>
+		<string>6</string>
 		<key>name</key>
 		<string>123向前走</string>
-		<key>avatarUrl</key>
+		<key>avatar</key>
 		<string>评论头像1</string>
 		<key>detail</key>
 		<string>不错不错好地方</string>

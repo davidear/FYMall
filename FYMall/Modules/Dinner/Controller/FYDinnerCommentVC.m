@@ -61,16 +61,24 @@ static NSString *IdentitySection1 = @"IdentitySection01";
     // Do any additional setup after loading the view.
     [self setupSubviews];
     [self loadData];
+    [_tableView reloadData];
 }
 
 - (void)loadData
 {
     NSString *path0 = [[NSBundle mainBundle] pathForResource:@"DinnerComment1" ofType:@"plist"];
     _dataArraySection0 = [NSArray arrayWithContentsOfFile:path0];
-//    NSString *path1 = [[NSBundle mainBundle] pathForResource:@"DinnerComment2" ofType:@"plist"];
-//    _dataArraySection1 = [NSArray arrayWithContentsOfFile:path1];
-    
+    NSString *path1 = [[NSBundle mainBundle] pathForResource:@"DinnerComment2" ofType:@"plist"];
+    NSArray *array = [NSArray arrayWithContentsOfFile:path1];
     NSMutableArray *mutArr = [NSMutableArray array];
+    for (NSDictionary *dic in array) {
+        FYDinnerCommentCellFrame *cellFrame = [[FYDinnerCommentCellFrame alloc] init];
+        cellFrame.dinnerComment = [[FYComment alloc] initWithDic:dic];
+        [mutArr addObject:cellFrame];
+    }
+    _cell2FrameArray = [NSArray arrayWithArray:mutArr];
+    
+//    NSMutableArray *mutArr = [NSMutableArray array];
 //    for (NSDictionary *dic in _dataArraySection1) {
 //        FYDinnerCommentCellFrame *cellFrame = [[FYDinnerCommentCellFrame alloc] init];
 //        cellFrame.dinnerComment = [[FYComment alloc] initWithDic:dic];
@@ -99,7 +107,7 @@ static NSString *IdentitySection1 = @"IdentitySection01";
 
 - (void)setupSubviews
 {
-    self.title = _dinner.fullname;
+    self.title = @"餐厅评论";
     _tableView.frame = self.view.bounds;
     
 }

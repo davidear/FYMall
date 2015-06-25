@@ -14,13 +14,14 @@
     self = [super init];
     if (self) {
         _userid = [dic objectForKey:@"userid"];
-        _commentId = [dic objectForKey:@"id"];
+        _commentId = [dic objectForKey:@"commentId"];
         
-        _likeCount = [[dic objectForKey:@"flag"] intValue];
-        _name = [dic objectForKey:@"username"];
-        _detail = [dic objectForKey:@"content"];
-        _avatar = kFYNetworkAvatarURLStr(_userid);
-        _createdAt = [dic objectForKey:@"created"];
+        _likeCount = [[dic objectForKey:@"likeCount"] intValue];
+        _name = [dic objectForKey:@"name"];
+        _detail = [dic objectForKey:@"detail"];
+//        _avatar = kFYNetworkAvatarURLStr(_userid);
+        _avatar = [dic objectForKey:@"avatar"];
+        _createdAt = [dic objectForKey:@"createdAt"];
     }
     return self;
 }
