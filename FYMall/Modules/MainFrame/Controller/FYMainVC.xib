@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FYMainVC">
+            <connections>
+                <outlet property="_searchTextField" destination="Qbe-lu-Nhc" id="DCo-av-iIB"/>
+                <outlet property="_tableView" destination="5ew-ht-SZJ" id="VXW-1W-yew"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qbe-lu-Nhc" customClass="FYRoundRectTextField">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Hmo-sx-9O9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Hmo-sx-9O9"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Hmo-sx-9O9"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-ht-SZJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="drg-6C-gFO"/>
+                        <outlet property="delegate" destination="-1" id="79W-Uc-UUm"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5ew-ht-SZJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="7" id="IAB-Gf-xmo"/>
+                <constraint firstItem="5ew-ht-SZJ" firstAttribute="top" secondItem="Qbe-lu-Nhc" secondAttribute="bottom" constant="20" id="JTf-9z-gvl">
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
+                <constraint firstItem="Qbe-lu-Nhc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="NdE-ti-JdN">
+                    <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="5ew-ht-SZJ" secondAttribute="bottom" id="PWW-Ve-J2c"/>
+                <constraint firstAttribute="trailing" secondItem="5ew-ht-SZJ" secondAttribute="trailing" constant="15" id="Zy1-cm-cf8">
+                    <variation key="heightClass=regular-widthClass=compact" constant="7"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="Qbe-lu-Nhc" secondAttribute="trailing" constant="20" id="knz-xR-7FJ">
+                    <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                </constraint>
+                <constraint firstItem="Qbe-lu-Nhc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="s3o-tf-C8v"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Qbe-lu-Nhc"/>
+                    <exclude reference="5ew-ht-SZJ"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="NdE-ti-JdN"/>
+                    <exclude reference="knz-xR-7FJ"/>
+                    <exclude reference="s3o-tf-C8v"/>
+                    <exclude reference="IAB-Gf-xmo"/>
+                    <exclude reference="JTf-9z-gvl"/>
+                    <exclude reference="PWW-Ve-J2c"/>
+                    <exclude reference="Zy1-cm-cf8"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Qbe-lu-Nhc"/>
+                    <include reference="5ew-ht-SZJ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="NdE-ti-JdN"/>
+                    <include reference="knz-xR-7FJ"/>
+                    <include reference="s3o-tf-C8v"/>
+                    <include reference="IAB-Gf-xmo"/>
+                    <include reference="JTf-9z-gvl"/>
+                    <include reference="PWW-Ve-J2c"/>
+                    <include reference="Zy1-cm-cf8"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

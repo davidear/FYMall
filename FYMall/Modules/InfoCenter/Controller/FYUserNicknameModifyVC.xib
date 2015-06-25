@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FYUserNicknameModifyVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XlX-Kg-SJC" customClass="FYLineTextField">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojt-ar-8rW" customClass="FYRoundRectButton">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="hBC-dg-ve8"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hBC-dg-ve8"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="hBC-dg-ve8"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="okButtonClicked:" destination="-1" eventType="touchUpInside" id="C8U-VW-Lb6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ojt-ar-8rW" secondAttribute="trailing" constant="17" id="9cy-m8-86f"/>
+                <constraint firstItem="ojt-ar-8rW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="17" id="DnT-qU-BI4"/>
+                <constraint firstItem="XlX-Kg-SJC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="Ut6-Br-hY5"/>
+                <constraint firstAttribute="trailing" secondItem="XlX-Kg-SJC" secondAttribute="trailing" constant="35" id="efp-yB-nwT"/>
+                <constraint firstItem="XlX-Kg-SJC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="mKz-9a-HWL"/>
+                <constraint firstAttribute="bottom" secondItem="ojt-ar-8rW" secondAttribute="bottom" constant="265" id="pun-25-QW9"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="XlX-Kg-SJC"/>
+                    <exclude reference="ojt-ar-8rW"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Ut6-Br-hY5"/>
+                    <exclude reference="efp-yB-nwT"/>
+                    <exclude reference="mKz-9a-HWL"/>
+                    <exclude reference="9cy-m8-86f"/>
+                    <exclude reference="DnT-qU-BI4"/>
+                    <exclude reference="pun-25-QW9"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="XlX-Kg-SJC"/>
+                    <include reference="ojt-ar-8rW"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Ut6-Br-hY5"/>
+                    <include reference="efp-yB-nwT"/>
+                    <include reference="mKz-9a-HWL"/>
+                    <include reference="9cy-m8-86f"/>
+                    <include reference="DnT-qU-BI4"/>
+                    <include reference="pun-25-QW9"/>
+                </mask>
+            </variation>
+        </view>
+        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="7Da-zF-UVT">
+            <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <textInputTraits key="textInputTraits"/>
+            <point key="canvasLocation" x="637.5" y="678"/>
+        </textField>
+    </objects>
+</document>

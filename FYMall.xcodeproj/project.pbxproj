@@ -1,0 +1,1202 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B4A6F43B677B0EAA071ED1B /* libPods-FYMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53158E93D2A782B439E94531 /* libPods-FYMall.a */; };
+		B23B0EDF1B3B9DAD009E568A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0EDE1B3B9DAD009E568A /* main.m */; };
+		B23B0EE21B3B9DAD009E568A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0EE11B3B9DAD009E568A /* AppDelegate.m */; };
+		B23B0EE81B3B9DAD009E568A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23B0EE61B3B9DAD009E568A /* Main.storyboard */; };
+		B23B0EEA1B3B9DAD009E568A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23B0EE91B3B9DAD009E568A /* Images.xcassets */; };
+		B23B0EED1B3B9DAD009E568A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0EEB1B3B9DAD009E568A /* LaunchScreen.xib */; };
+		B23B0EF91B3B9DAD009E568A /* FYMallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0EF81B3B9DAD009E568A /* FYMallTests.m */; };
+		B23B0FAD1B3BA026009E568A /* UIButton+FY.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F041B3BA026009E568A /* UIButton+FY.m */; };
+		B23B0FAE1B3BA026009E568A /* UIImage+FY.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F061B3BA026009E568A /* UIImage+FY.m */; };
+		B23B0FAF1B3BA026009E568A /* FYDinnerCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F0B1B3BA026009E568A /* FYDinnerCommentVC.m */; };
+		B23B0FB01B3BA026009E568A /* FYDinnerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F0D1B3BA026009E568A /* FYDinnerVC.m */; };
+		B23B0FB11B3BA026009E568A /* FYDinnerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F0E1B3BA026009E568A /* FYDinnerVC.xib */; };
+		B23B0FB21B3BA026009E568A /* FYSearchMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F101B3BA026009E568A /* FYSearchMapVC.m */; };
+		B23B0FB31B3BA026009E568A /* FYSearchMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F111B3BA026009E568A /* FYSearchMapVC.xib */; };
+		B23B0FB41B3BA026009E568A /* DinnerComment1.plist in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F131B3BA026009E568A /* DinnerComment1.plist */; };
+		B23B0FB51B3BA026009E568A /* DinnerComment2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F141B3BA026009E568A /* DinnerComment2.plist */; };
+		B23B0FB61B3BA026009E568A /* DinnerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F151B3BA026009E568A /* DinnerList.plist */; };
+		B23B0FB71B3BA026009E568A /* FYAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F171B3BA026009E568A /* FYAnnotation.m */; };
+		B23B0FB81B3BA026009E568A /* FYComment.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F191B3BA026009E568A /* FYComment.m */; };
+		B23B0FB91B3BA026009E568A /* FYDinner.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F1B1B3BA026009E568A /* FYDinner.m */; };
+		B23B0FBA1B3BA026009E568A /* FYDinnerCommentCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F1D1B3BA026009E568A /* FYDinnerCommentCellFrame.m */; };
+		B23B0FBB1B3BA026009E568A /* FYAdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F201B3BA026009E568A /* FYAdvertiseView.m */; };
+		B23B0FBC1B3BA026009E568A /* FYCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F221B3BA026009E568A /* FYCommentView.m */; };
+		B23B0FBD1B3BA026009E568A /* FYCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F231B3BA026009E568A /* FYCommentView.xib */; };
+		B23B0FBE1B3BA026009E568A /* FYDinnerCommentCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F251B3BA026009E568A /* FYDinnerCommentCell1.m */; };
+		B23B0FBF1B3BA026009E568A /* FYDinnerCommentCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F261B3BA026009E568A /* FYDinnerCommentCell1.xib */; };
+		B23B0FC01B3BA026009E568A /* FYDinnerCommentCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F281B3BA026009E568A /* FYDinnerCommentCell2.m */; };
+		B23B0FC11B3BA026009E568A /* FYDinnerCommentHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F2A1B3BA026009E568A /* FYDinnerCommentHeadView.m */; };
+		B23B0FC21B3BA026009E568A /* FYDinnerCommentHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F2B1B3BA026009E568A /* FYDinnerCommentHeadView.xib */; };
+		B23B0FC31B3BA026009E568A /* FYLineUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F2D1B3BA026009E568A /* FYLineUpView.m */; };
+		B23B0FC41B3BA026009E568A /* FYInfoCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F321B3BA026009E568A /* FYInfoCenterVC.m */; };
+		B23B0FC51B3BA026009E568A /* FYUserInfoSettingTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F341B3BA026009E568A /* FYUserInfoSettingTVC.m */; };
+		B23B0FC61B3BA026009E568A /* FYUserNicknameModifyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F361B3BA026009E568A /* FYUserNicknameModifyVC.m */; };
+		B23B0FC71B3BA026009E568A /* FYUserNicknameModifyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F371B3BA026009E568A /* FYUserNicknameModifyVC.xib */; };
+		B23B0FC81B3BA026009E568A /* FYUserPhoneReset1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F391B3BA026009E568A /* FYUserPhoneReset1VC.m */; };
+		B23B0FC91B3BA026009E568A /* FYUserPhoneReset1VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F3A1B3BA026009E568A /* FYUserPhoneReset1VC.xib */; };
+		B23B0FCA1B3BA026009E568A /* FYUserPhoneReset2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F3C1B3BA026009E568A /* FYUserPhoneReset2VC.m */; };
+		B23B0FCB1B3BA026009E568A /* FYUserPhoneReset2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F3D1B3BA026009E568A /* FYUserPhoneReset2VC.xib */; };
+		B23B0FCC1B3BA026009E568A /* FYUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F401B3BA026009E568A /* FYUserInfo.m */; };
+		B23B0FCD1B3BA026009E568A /* FYInfoCenterAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F441B3BA026009E568A /* FYInfoCenterAvatar.m */; };
+		B23B0FCE1B3BA026009E568A /* FYInfoCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F461B3BA026009E568A /* FYInfoCenterCell.m */; };
+		B23B0FCF1B3BA026009E568A /* FYInfoCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F471B3BA026009E568A /* FYInfoCenterCell.xib */; };
+		B23B0FD01B3BA026009E568A /* FYInfoCenterHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F491B3BA026009E568A /* FYInfoCenterHeaderView.m */; };
+		B23B0FD11B3BA026009E568A /* FYInfoCenterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F4A1B3BA026009E568A /* FYInfoCenterHeaderView.xib */; };
+		B23B0FD21B3BA026009E568A /* FYInfoRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F4C1B3BA026009E568A /* FYInfoRenderView.m */; };
+		B23B0FD31B3BA026009E568A /* FYInfoRenderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F4D1B3BA026009E568A /* FYInfoRenderView.xib */; };
+		B23B0FD41B3BA026009E568A /* FyLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F521B3BA026009E568A /* FyLoginManager.m */; };
+		B23B0FD51B3BA026009E568A /* FYLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F541B3BA026009E568A /* FYLoginVC.m */; };
+		B23B0FD61B3BA026009E568A /* FYLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F551B3BA026009E568A /* FYLoginVC.xib */; };
+		B23B0FD71B3BA026009E568A /* FYNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F571B3BA026009E568A /* FYNewFeatureController.m */; };
+		B23B0FD81B3BA026009E568A /* FYRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F581B3BA026009E568A /* FYRegisterView.xib */; };
+		B23B0FD91B3BA026009E568A /* FYAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F5B1B3BA026009E568A /* FYAccount.m */; };
+		B23B0FDA1B3BA026009E568A /* FYAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F5E1B3BA026009E568A /* FYAccountTool.m */; };
+		B23B0FDB1B3BA026009E568A /* FYTempLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F611B3BA026009E568A /* FYTempLoginView.m */; };
+		B23B0FDC1B3BA026009E568A /* FYTempLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F621B3BA026009E568A /* FYTempLoginView.xib */; };
+		B23B0FDD1B3BA026009E568A /* FYVerifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F641B3BA026009E568A /* FYVerifyView.m */; };
+		B23B0FDE1B3BA026009E568A /* FYVerifyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F651B3BA026009E568A /* FYVerifyView.xib */; };
+		B23B0FDF1B3BA026009E568A /* LXActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F691B3BA026009E568A /* LXActionSheet.m */; };
+		B23B0FE01B3BA026009E568A /* ToggleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F6C1B3BA026009E568A /* ToggleBase.m */; };
+		B23B0FE11B3BA026009E568A /* ToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F6E1B3BA026009E568A /* ToggleButton.m */; };
+		B23B0FE21B3BA026009E568A /* ToggleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F701B3BA026009E568A /* ToggleView.m */; };
+		B23B0FE31B3BA026009E568A /* FYFrameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F741B3BA026009E568A /* FYFrameManager.m */; };
+		B23B0FE41B3BA026009E568A /* FYLeftMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F761B3BA026009E568A /* FYLeftMenuVC.m */; };
+		B23B0FE51B3BA026009E568A /* FYMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F781B3BA026009E568A /* FYMainVC.m */; };
+		B23B0FE61B3BA026009E568A /* FYMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F791B3BA026009E568A /* FYMainVC.xib */; };
+		B23B0FE71B3BA026009E568A /* LeftMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F7B1B3BA026009E568A /* LeftMenu.plist */; };
+		B23B0FE81B3BA026009E568A /* FYHeadInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F7D1B3BA026009E568A /* FYHeadInfo.xib */; };
+		B23B0FE91B3BA026009E568A /* FYMainVCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F7F1B3BA026009E568A /* FYMainVCCell.m */; };
+		B23B0FEA1B3BA026009E568A /* FYMainVCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F801B3BA026009E568A /* FYMainVCCell.xib */; };
+		B23B0FEB1B3BA026009E568A /* FYSettingHeaderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F851B3BA026009E568A /* FYSettingHeaderVC.m */; };
+		B23B0FEC1B3BA026009E568A /* FYSettingHeaderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23B0F861B3BA026009E568A /* FYSettingHeaderVC.xib */; };
+		B23B0FED1B3BA026009E568A /* FYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F8F1B3BA026009E568A /* FYNavigationController.m */; };
+		B23B0FEE1B3BA026009E568A /* FYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F911B3BA026009E568A /* FYViewController.m */; };
+		B23B0FEF1B3BA026009E568A /* FYBaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F941B3BA026009E568A /* FYBaseData.m */; };
+		B23B0FF01B3BA026009E568A /* FYAnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F971B3BA026009E568A /* FYAnimationButton.m */; };
+		B23B0FF11B3BA026009E568A /* FYBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F991B3BA026009E568A /* FYBaseCell.m */; };
+		B23B0FF21B3BA026009E568A /* FYLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F9B1B3BA026009E568A /* FYLikeButton.m */; };
+		B23B0FF31B3BA026009E568A /* FYLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F9D1B3BA026009E568A /* FYLineTextField.m */; };
+		B23B0FF41B3BA026009E568A /* FYRoundRectButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0F9F1B3BA026009E568A /* FYRoundRectButton.m */; };
+		B23B0FF51B3BA026009E568A /* FYRoundRectTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0FA11B3BA026009E568A /* FYRoundRectTextField.m */; };
+		B23B0FF61B3BA026009E568A /* FYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0FA31B3BA026009E568A /* FYTextField.m */; };
+		B23B0FF81B3BA026009E568A /* FYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0FA81B3BA026009E568A /* FYNetwork.m */; };
+		B23B0FF91B3BA026009E568A /* FYStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0FAA1B3BA026009E568A /* FYStorage.m */; };
+		B23B0FFA1B3BA026009E568A /* FYtool.m in Sources */ = {isa = PBXBuildFile; fileRef = B23B0FAC1B3BA026009E568A /* FYtool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B23B0EF31B3B9DAD009E568A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B23B0ED11B3B9DAD009E568A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B23B0ED81B3B9DAD009E568A;
+			remoteInfo = FYMall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		515A0ACE464BD14E473F3868 /* Pods-FYMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYMall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYMall/Pods-FYMall.debug.xcconfig"; sourceTree = "<group>"; };
+		53158E93D2A782B439E94531 /* libPods-FYMall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FYMall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		881968F57FE26683A2EF0B9A /* Pods-FYMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYMall/Pods-FYMall.release.xcconfig"; sourceTree = "<group>"; };
+		B23B0ED91B3B9DAD009E568A /* FYMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23B0EDD1B3B9DAD009E568A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23B0EDE1B3B9DAD009E568A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B23B0EE01B3B9DAD009E568A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B23B0EE11B3B9DAD009E568A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B23B0EE71B3B9DAD009E568A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B23B0EE91B3B9DAD009E568A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B23B0EEC1B3B9DAD009E568A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B23B0EF21B3B9DAD009E568A /* FYMallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYMallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23B0EF71B3B9DAD009E568A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23B0EF81B3B9DAD009E568A /* FYMallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYMallTests.m; sourceTree = "<group>"; };
+		B23B0F031B3BA026009E568A /* UIButton+FY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FY.h"; sourceTree = "<group>"; };
+		B23B0F041B3BA026009E568A /* UIButton+FY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FY.m"; sourceTree = "<group>"; };
+		B23B0F051B3BA026009E568A /* UIImage+FY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FY.h"; sourceTree = "<group>"; };
+		B23B0F061B3BA026009E568A /* UIImage+FY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FY.m"; sourceTree = "<group>"; };
+		B23B0F0A1B3BA026009E568A /* FYDinnerCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDinnerCommentVC.h; sourceTree = "<group>"; };
+		B23B0F0B1B3BA026009E568A /* FYDinnerCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDinnerCommentVC.m; sourceTree = "<group>"; };
+		B23B0F0C1B3BA026009E568A /* FYDinnerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDinnerVC.h; sourceTree = "<group>"; };
+		B23B0F0D1B3BA026009E568A /* FYDinnerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDinnerVC.m; sourceTree = "<group>"; };
+		B23B0F0E1B3BA026009E568A /* FYDinnerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYDinnerVC.xib; sourceTree = "<group>"; };
+		B23B0F0F1B3BA026009E568A /* FYSearchMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSearchMapVC.h; sourceTree = "<group>"; };
+		B23B0F101B3BA026009E568A /* FYSearchMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSearchMapVC.m; sourceTree = "<group>"; };
+		B23B0F111B3BA026009E568A /* FYSearchMapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYSearchMapVC.xib; sourceTree = "<group>"; };
+		B23B0F131B3BA026009E568A /* DinnerComment1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DinnerComment1.plist; sourceTree = "<group>"; };
+		B23B0F141B3BA026009E568A /* DinnerComment2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DinnerComment2.plist; sourceTree = "<group>"; };
+		B23B0F151B3BA026009E568A /* DinnerList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DinnerList.plist; sourceTree = "<group>"; };
+		B23B0F161B3BA026009E568A /* FYAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAnnotation.h; sourceTree = "<group>"; };
+		B23B0F171B3BA026009E568A /* FYAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYAnnotation.m; sourceTree = "<group>"; };
+		B23B0F181B3BA026009E568A /* FYComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYComment.h; sourceTree = "<group>"; };
+		B23B0F191B3BA026009E568A /* FYComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYComment.m; sourceTree = "<group>"; };
+		B23B0F1A1B3BA026009E568A /* FYDinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDinner.h; sourceTree = "<group>"; };
+		B23B0F1B1B3BA026009E568A /* FYDinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDinner.m; sourceTree = "<group>"; };
+		B23B0F1C1B3BA026009E568A /* FYDinnerCommentCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDinnerCommentCellFrame.h; sourceTree = "<group>"; };
+		B23B0F1D1B3BA026009E568A /* FYDinnerCommentCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDinnerCommentCellFrame.m; sourceTree = "<group>"; };
+		B23B0F1F1B3BA026009E568A /* FYAdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAdvertiseView.h; sourceTree = "<group>"; };
+		B23B0F201B3BA026009E568A /* FYAdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYAdvertiseView.m; sourceTree = "<group>"; };
+		B23B0F211B3BA026009E568A /* FYCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYCommentView.h; sourceTree = "<group>"; };
+		B23B0F221B3BA026009E568A /* FYCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYCommentView.m; sourceTree = "<group>"; };
+		B23B0F231B3BA026009E568A /* FYCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYCommentView.xib; sourceTree = "<group>"; };
+		B23B0F241B3BA026009E568A /* FYDinnerCommentCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDinnerCommentCell1.h; sourceTree = "<group>"; };
+		B23B0F251B3BA026009E568A /* FYDinnerCommentCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDinnerCommentCell1.m; sourceTree = "<group>"; };
+		B23B0F261B3BA026009E568A /* FYDinnerCommentCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYDinnerCommentCell1.xib; sourceTree = "<group>"; };
+		B23B0F271B3BA026009E568A /* FYDinnerCommentCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDinnerCommentCell2.h; sourceTree = "<group>"; };
+		B23B0F281B3BA026009E568A /* FYDinnerCommentCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDinnerCommentCell2.m; sourceTree = "<group>"; };
+		B23B0F291B3BA026009E568A /* FYDinnerCommentHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYDinnerCommentHeadView.h; sourceTree = "<group>"; };
+		B23B0F2A1B3BA026009E568A /* FYDinnerCommentHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYDinnerCommentHeadView.m; sourceTree = "<group>"; };
+		B23B0F2B1B3BA026009E568A /* FYDinnerCommentHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYDinnerCommentHeadView.xib; sourceTree = "<group>"; };
+		B23B0F2C1B3BA026009E568A /* FYLineUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLineUpView.h; sourceTree = "<group>"; };
+		B23B0F2D1B3BA026009E568A /* FYLineUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLineUpView.m; sourceTree = "<group>"; };
+		B23B0F311B3BA026009E568A /* FYInfoCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYInfoCenterVC.h; sourceTree = "<group>"; };
+		B23B0F321B3BA026009E568A /* FYInfoCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYInfoCenterVC.m; sourceTree = "<group>"; };
+		B23B0F331B3BA026009E568A /* FYUserInfoSettingTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYUserInfoSettingTVC.h; sourceTree = "<group>"; };
+		B23B0F341B3BA026009E568A /* FYUserInfoSettingTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYUserInfoSettingTVC.m; sourceTree = "<group>"; };
+		B23B0F351B3BA026009E568A /* FYUserNicknameModifyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYUserNicknameModifyVC.h; sourceTree = "<group>"; };
+		B23B0F361B3BA026009E568A /* FYUserNicknameModifyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYUserNicknameModifyVC.m; sourceTree = "<group>"; };
+		B23B0F371B3BA026009E568A /* FYUserNicknameModifyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYUserNicknameModifyVC.xib; sourceTree = "<group>"; };
+		B23B0F381B3BA026009E568A /* FYUserPhoneReset1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYUserPhoneReset1VC.h; sourceTree = "<group>"; };
+		B23B0F391B3BA026009E568A /* FYUserPhoneReset1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYUserPhoneReset1VC.m; sourceTree = "<group>"; };
+		B23B0F3A1B3BA026009E568A /* FYUserPhoneReset1VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYUserPhoneReset1VC.xib; sourceTree = "<group>"; };
+		B23B0F3B1B3BA026009E568A /* FYUserPhoneReset2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYUserPhoneReset2VC.h; sourceTree = "<group>"; };
+		B23B0F3C1B3BA026009E568A /* FYUserPhoneReset2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYUserPhoneReset2VC.m; sourceTree = "<group>"; };
+		B23B0F3D1B3BA026009E568A /* FYUserPhoneReset2VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYUserPhoneReset2VC.xib; sourceTree = "<group>"; };
+		B23B0F3F1B3BA026009E568A /* FYUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYUserInfo.h; sourceTree = "<group>"; };
+		B23B0F401B3BA026009E568A /* FYUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYUserInfo.m; sourceTree = "<group>"; };
+		B23B0F431B3BA026009E568A /* FYInfoCenterAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYInfoCenterAvatar.h; sourceTree = "<group>"; };
+		B23B0F441B3BA026009E568A /* FYInfoCenterAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYInfoCenterAvatar.m; sourceTree = "<group>"; };
+		B23B0F451B3BA026009E568A /* FYInfoCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYInfoCenterCell.h; sourceTree = "<group>"; };
+		B23B0F461B3BA026009E568A /* FYInfoCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYInfoCenterCell.m; sourceTree = "<group>"; };
+		B23B0F471B3BA026009E568A /* FYInfoCenterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYInfoCenterCell.xib; sourceTree = "<group>"; };
+		B23B0F481B3BA026009E568A /* FYInfoCenterHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYInfoCenterHeaderView.h; sourceTree = "<group>"; };
+		B23B0F491B3BA026009E568A /* FYInfoCenterHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYInfoCenterHeaderView.m; sourceTree = "<group>"; };
+		B23B0F4A1B3BA026009E568A /* FYInfoCenterHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYInfoCenterHeaderView.xib; sourceTree = "<group>"; };
+		B23B0F4B1B3BA026009E568A /* FYInfoRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYInfoRenderView.h; sourceTree = "<group>"; };
+		B23B0F4C1B3BA026009E568A /* FYInfoRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYInfoRenderView.m; sourceTree = "<group>"; };
+		B23B0F4D1B3BA026009E568A /* FYInfoRenderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYInfoRenderView.xib; sourceTree = "<group>"; };
+		B23B0F511B3BA026009E568A /* FYLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLoginManager.h; sourceTree = "<group>"; };
+		B23B0F521B3BA026009E568A /* FyLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FyLoginManager.m; sourceTree = "<group>"; };
+		B23B0F531B3BA026009E568A /* FYLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLoginVC.h; sourceTree = "<group>"; };
+		B23B0F541B3BA026009E568A /* FYLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLoginVC.m; sourceTree = "<group>"; };
+		B23B0F551B3BA026009E568A /* FYLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYLoginVC.xib; sourceTree = "<group>"; };
+		B23B0F561B3BA026009E568A /* FYNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYNewFeatureController.h; sourceTree = "<group>"; };
+		B23B0F571B3BA026009E568A /* FYNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYNewFeatureController.m; sourceTree = "<group>"; };
+		B23B0F581B3BA026009E568A /* FYRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYRegisterView.xib; sourceTree = "<group>"; };
+		B23B0F5A1B3BA026009E568A /* FYAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAccount.h; sourceTree = "<group>"; };
+		B23B0F5B1B3BA026009E568A /* FYAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYAccount.m; sourceTree = "<group>"; };
+		B23B0F5D1B3BA026009E568A /* FYAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAccountTool.h; sourceTree = "<group>"; };
+		B23B0F5E1B3BA026009E568A /* FYAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYAccountTool.m; sourceTree = "<group>"; };
+		B23B0F601B3BA026009E568A /* FYTempLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTempLoginView.h; sourceTree = "<group>"; };
+		B23B0F611B3BA026009E568A /* FYTempLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTempLoginView.m; sourceTree = "<group>"; };
+		B23B0F621B3BA026009E568A /* FYTempLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYTempLoginView.xib; sourceTree = "<group>"; };
+		B23B0F631B3BA026009E568A /* FYVerifyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYVerifyView.h; sourceTree = "<group>"; };
+		B23B0F641B3BA026009E568A /* FYVerifyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYVerifyView.m; sourceTree = "<group>"; };
+		B23B0F651B3BA026009E568A /* FYVerifyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYVerifyView.xib; sourceTree = "<group>"; };
+		B23B0F681B3BA026009E568A /* LXActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXActionSheet.h; sourceTree = "<group>"; };
+		B23B0F691B3BA026009E568A /* LXActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXActionSheet.m; sourceTree = "<group>"; };
+		B23B0F6B1B3BA026009E568A /* ToggleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleBase.h; sourceTree = "<group>"; };
+		B23B0F6C1B3BA026009E568A /* ToggleBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToggleBase.m; sourceTree = "<group>"; };
+		B23B0F6D1B3BA026009E568A /* ToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleButton.h; sourceTree = "<group>"; };
+		B23B0F6E1B3BA026009E568A /* ToggleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToggleButton.m; sourceTree = "<group>"; };
+		B23B0F6F1B3BA026009E568A /* ToggleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleView.h; sourceTree = "<group>"; };
+		B23B0F701B3BA026009E568A /* ToggleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToggleView.m; sourceTree = "<group>"; };
+		B23B0F731B3BA026009E568A /* FYFrameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFrameManager.h; sourceTree = "<group>"; };
+		B23B0F741B3BA026009E568A /* FYFrameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFrameManager.m; sourceTree = "<group>"; };
+		B23B0F751B3BA026009E568A /* FYLeftMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLeftMenuVC.h; sourceTree = "<group>"; };
+		B23B0F761B3BA026009E568A /* FYLeftMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLeftMenuVC.m; sourceTree = "<group>"; };
+		B23B0F771B3BA026009E568A /* FYMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYMainVC.h; sourceTree = "<group>"; };
+		B23B0F781B3BA026009E568A /* FYMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYMainVC.m; sourceTree = "<group>"; };
+		B23B0F791B3BA026009E568A /* FYMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYMainVC.xib; sourceTree = "<group>"; };
+		B23B0F7B1B3BA026009E568A /* LeftMenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LeftMenu.plist; sourceTree = "<group>"; };
+		B23B0F7D1B3BA026009E568A /* FYHeadInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYHeadInfo.xib; sourceTree = "<group>"; };
+		B23B0F7E1B3BA026009E568A /* FYMainVCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYMainVCCell.h; sourceTree = "<group>"; };
+		B23B0F7F1B3BA026009E568A /* FYMainVCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYMainVCCell.m; sourceTree = "<group>"; };
+		B23B0F801B3BA026009E568A /* FYMainVCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYMainVCCell.xib; sourceTree = "<group>"; };
+		B23B0F841B3BA026009E568A /* FYSettingHeaderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSettingHeaderVC.h; sourceTree = "<group>"; };
+		B23B0F851B3BA026009E568A /* FYSettingHeaderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSettingHeaderVC.m; sourceTree = "<group>"; };
+		B23B0F861B3BA026009E568A /* FYSettingHeaderVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYSettingHeaderVC.xib; sourceTree = "<group>"; };
+		B23B0F8A1B3BA026009E568A /* FYConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYConstant.h; sourceTree = "<group>"; };
+		B23B0F8B1B3BA026009E568A /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		B23B0F8E1B3BA026009E568A /* FYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYNavigationController.h; sourceTree = "<group>"; };
+		B23B0F8F1B3BA026009E568A /* FYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYNavigationController.m; sourceTree = "<group>"; };
+		B23B0F901B3BA026009E568A /* FYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYViewController.h; sourceTree = "<group>"; };
+		B23B0F911B3BA026009E568A /* FYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYViewController.m; sourceTree = "<group>"; };
+		B23B0F931B3BA026009E568A /* FYBaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYBaseData.h; sourceTree = "<group>"; };
+		B23B0F941B3BA026009E568A /* FYBaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYBaseData.m; sourceTree = "<group>"; };
+		B23B0F961B3BA026009E568A /* FYAnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAnimationButton.h; sourceTree = "<group>"; };
+		B23B0F971B3BA026009E568A /* FYAnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYAnimationButton.m; sourceTree = "<group>"; };
+		B23B0F981B3BA026009E568A /* FYBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYBaseCell.h; sourceTree = "<group>"; };
+		B23B0F991B3BA026009E568A /* FYBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYBaseCell.m; sourceTree = "<group>"; };
+		B23B0F9A1B3BA026009E568A /* FYLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLikeButton.h; sourceTree = "<group>"; };
+		B23B0F9B1B3BA026009E568A /* FYLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLikeButton.m; sourceTree = "<group>"; };
+		B23B0F9C1B3BA026009E568A /* FYLineTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYLineTextField.h; sourceTree = "<group>"; };
+		B23B0F9D1B3BA026009E568A /* FYLineTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYLineTextField.m; sourceTree = "<group>"; };
+		B23B0F9E1B3BA026009E568A /* FYRoundRectButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYRoundRectButton.h; sourceTree = "<group>"; };
+		B23B0F9F1B3BA026009E568A /* FYRoundRectButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYRoundRectButton.m; sourceTree = "<group>"; };
+		B23B0FA01B3BA026009E568A /* FYRoundRectTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYRoundRectTextField.h; sourceTree = "<group>"; };
+		B23B0FA11B3BA026009E568A /* FYRoundRectTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYRoundRectTextField.m; sourceTree = "<group>"; };
+		B23B0FA21B3BA026009E568A /* FYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTextField.h; sourceTree = "<group>"; };
+		B23B0FA31B3BA026009E568A /* FYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTextField.m; sourceTree = "<group>"; };
+		B23B0FA71B3BA026009E568A /* FYNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYNetwork.h; sourceTree = "<group>"; };
+		B23B0FA81B3BA026009E568A /* FYNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYNetwork.m; sourceTree = "<group>"; };
+		B23B0FA91B3BA026009E568A /* FYStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYStorage.h; sourceTree = "<group>"; };
+		B23B0FAA1B3BA026009E568A /* FYStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYStorage.m; sourceTree = "<group>"; };
+		B23B0FAB1B3BA026009E568A /* FYtool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYtool.h; sourceTree = "<group>"; };
+		B23B0FAC1B3BA026009E568A /* FYtool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYtool.m; sourceTree = "<group>"; };
+		B23B0FFB1B3BA087009E568A /* FYMall-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FYMall-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B23B0ED61B3B9DAD009E568A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4A6F43B677B0EAA071ED1B /* libPods-FYMall.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23B0EEF1B3B9DAD009E568A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC645CFAF8DC00F258CFEF53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				515A0ACE464BD14E473F3868 /* Pods-FYMall.debug.xcconfig */,
+				881968F57FE26683A2EF0B9A /* Pods-FYMall.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B23B0ED01B3B9DAD009E568A = {
+			isa = PBXGroup;
+			children = (
+				B23B0EDB1B3B9DAD009E568A /* FYMall */,
+				B23B0EF51B3B9DAD009E568A /* FYMallTests */,
+				B23B0EDA1B3B9DAD009E568A /* Products */,
+				AC645CFAF8DC00F258CFEF53 /* Pods */,
+				CA77721C8CD91ECCBF0D28FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B23B0EDA1B3B9DAD009E568A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0ED91B3B9DAD009E568A /* FYMall.app */,
+				B23B0EF21B3B9DAD009E568A /* FYMallTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B23B0EDB1B3B9DAD009E568A /* FYMall */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F021B3BA026009E568A /* Catagory */,
+				B23B0F071B3BA026009E568A /* Modules */,
+				B23B0F891B3BA026009E568A /* Other */,
+				B23B0F8C1B3BA026009E568A /* Templates */,
+				B23B0FA61B3BA026009E568A /* Tool */,
+				B23B0EE01B3B9DAD009E568A /* AppDelegate.h */,
+				B23B0EE11B3B9DAD009E568A /* AppDelegate.m */,
+				B23B0EE61B3B9DAD009E568A /* Main.storyboard */,
+				B23B0EE91B3B9DAD009E568A /* Images.xcassets */,
+				B23B0EEB1B3B9DAD009E568A /* LaunchScreen.xib */,
+				B23B0EDC1B3B9DAD009E568A /* Supporting Files */,
+			);
+			path = FYMall;
+			sourceTree = "<group>";
+		};
+		B23B0EDC1B3B9DAD009E568A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0EDD1B3B9DAD009E568A /* Info.plist */,
+				B23B0EDE1B3B9DAD009E568A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B23B0EF51B3B9DAD009E568A /* FYMallTests */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0EF81B3B9DAD009E568A /* FYMallTests.m */,
+				B23B0EF61B3B9DAD009E568A /* Supporting Files */,
+			);
+			path = FYMallTests;
+			sourceTree = "<group>";
+		};
+		B23B0EF61B3B9DAD009E568A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0EF71B3B9DAD009E568A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B23B0F021B3BA026009E568A /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F031B3BA026009E568A /* UIButton+FY.h */,
+				B23B0F041B3BA026009E568A /* UIButton+FY.m */,
+				B23B0F051B3BA026009E568A /* UIImage+FY.h */,
+				B23B0F061B3BA026009E568A /* UIImage+FY.m */,
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
+		B23B0F071B3BA026009E568A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F081B3BA026009E568A /* Dinner */,
+				B23B0F2F1B3BA026009E568A /* InfoCenter */,
+				B23B0F4F1B3BA026009E568A /* Login */,
+				B23B0F711B3BA026009E568A /* MainFrame */,
+				B23B0F821B3BA026009E568A /* Setting */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B23B0F081B3BA026009E568A /* Dinner */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F091B3BA026009E568A /* Controller */,
+				B23B0F121B3BA026009E568A /* Model */,
+				B23B0F1E1B3BA026009E568A /* View */,
+				B23B0F2E1B3BA026009E568A /* Widget */,
+			);
+			path = Dinner;
+			sourceTree = "<group>";
+		};
+		B23B0F091B3BA026009E568A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F0A1B3BA026009E568A /* FYDinnerCommentVC.h */,
+				B23B0F0B1B3BA026009E568A /* FYDinnerCommentVC.m */,
+				B23B0F0C1B3BA026009E568A /* FYDinnerVC.h */,
+				B23B0F0D1B3BA026009E568A /* FYDinnerVC.m */,
+				B23B0F0E1B3BA026009E568A /* FYDinnerVC.xib */,
+				B23B0F0F1B3BA026009E568A /* FYSearchMapVC.h */,
+				B23B0F101B3BA026009E568A /* FYSearchMapVC.m */,
+				B23B0F111B3BA026009E568A /* FYSearchMapVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B23B0F121B3BA026009E568A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F131B3BA026009E568A /* DinnerComment1.plist */,
+				B23B0F141B3BA026009E568A /* DinnerComment2.plist */,
+				B23B0F151B3BA026009E568A /* DinnerList.plist */,
+				B23B0F161B3BA026009E568A /* FYAnnotation.h */,
+				B23B0F171B3BA026009E568A /* FYAnnotation.m */,
+				B23B0F181B3BA026009E568A /* FYComment.h */,
+				B23B0F191B3BA026009E568A /* FYComment.m */,
+				B23B0F1A1B3BA026009E568A /* FYDinner.h */,
+				B23B0F1B1B3BA026009E568A /* FYDinner.m */,
+				B23B0F1C1B3BA026009E568A /* FYDinnerCommentCellFrame.h */,
+				B23B0F1D1B3BA026009E568A /* FYDinnerCommentCellFrame.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B23B0F1E1B3BA026009E568A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F1F1B3BA026009E568A /* FYAdvertiseView.h */,
+				B23B0F201B3BA026009E568A /* FYAdvertiseView.m */,
+				B23B0F211B3BA026009E568A /* FYCommentView.h */,
+				B23B0F221B3BA026009E568A /* FYCommentView.m */,
+				B23B0F231B3BA026009E568A /* FYCommentView.xib */,
+				B23B0F241B3BA026009E568A /* FYDinnerCommentCell1.h */,
+				B23B0F251B3BA026009E568A /* FYDinnerCommentCell1.m */,
+				B23B0F261B3BA026009E568A /* FYDinnerCommentCell1.xib */,
+				B23B0F271B3BA026009E568A /* FYDinnerCommentCell2.h */,
+				B23B0F281B3BA026009E568A /* FYDinnerCommentCell2.m */,
+				B23B0F291B3BA026009E568A /* FYDinnerCommentHeadView.h */,
+				B23B0F2A1B3BA026009E568A /* FYDinnerCommentHeadView.m */,
+				B23B0F2B1B3BA026009E568A /* FYDinnerCommentHeadView.xib */,
+				B23B0F2C1B3BA026009E568A /* FYLineUpView.h */,
+				B23B0F2D1B3BA026009E568A /* FYLineUpView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B23B0F2E1B3BA026009E568A /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		B23B0F2F1B3BA026009E568A /* InfoCenter */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F301B3BA026009E568A /* Controller */,
+				B23B0F3E1B3BA026009E568A /* Model */,
+				B23B0F411B3BA026009E568A /* Tool */,
+				B23B0F421B3BA026009E568A /* View */,
+				B23B0F4E1B3BA026009E568A /* Widget */,
+			);
+			path = InfoCenter;
+			sourceTree = "<group>";
+		};
+		B23B0F301B3BA026009E568A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F311B3BA026009E568A /* FYInfoCenterVC.h */,
+				B23B0F321B3BA026009E568A /* FYInfoCenterVC.m */,
+				B23B0F331B3BA026009E568A /* FYUserInfoSettingTVC.h */,
+				B23B0F341B3BA026009E568A /* FYUserInfoSettingTVC.m */,
+				B23B0F351B3BA026009E568A /* FYUserNicknameModifyVC.h */,
+				B23B0F361B3BA026009E568A /* FYUserNicknameModifyVC.m */,
+				B23B0F371B3BA026009E568A /* FYUserNicknameModifyVC.xib */,
+				B23B0F381B3BA026009E568A /* FYUserPhoneReset1VC.h */,
+				B23B0F391B3BA026009E568A /* FYUserPhoneReset1VC.m */,
+				B23B0F3A1B3BA026009E568A /* FYUserPhoneReset1VC.xib */,
+				B23B0F3B1B3BA026009E568A /* FYUserPhoneReset2VC.h */,
+				B23B0F3C1B3BA026009E568A /* FYUserPhoneReset2VC.m */,
+				B23B0F3D1B3BA026009E568A /* FYUserPhoneReset2VC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B23B0F3E1B3BA026009E568A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F3F1B3BA026009E568A /* FYUserInfo.h */,
+				B23B0F401B3BA026009E568A /* FYUserInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B23B0F411B3BA026009E568A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		B23B0F421B3BA026009E568A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F431B3BA026009E568A /* FYInfoCenterAvatar.h */,
+				B23B0F441B3BA026009E568A /* FYInfoCenterAvatar.m */,
+				B23B0F451B3BA026009E568A /* FYInfoCenterCell.h */,
+				B23B0F461B3BA026009E568A /* FYInfoCenterCell.m */,
+				B23B0F471B3BA026009E568A /* FYInfoCenterCell.xib */,
+				B23B0F481B3BA026009E568A /* FYInfoCenterHeaderView.h */,
+				B23B0F491B3BA026009E568A /* FYInfoCenterHeaderView.m */,
+				B23B0F4A1B3BA026009E568A /* FYInfoCenterHeaderView.xib */,
+				B23B0F4B1B3BA026009E568A /* FYInfoRenderView.h */,
+				B23B0F4C1B3BA026009E568A /* FYInfoRenderView.m */,
+				B23B0F4D1B3BA026009E568A /* FYInfoRenderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B23B0F4E1B3BA026009E568A /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		B23B0F4F1B3BA026009E568A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F501B3BA026009E568A /* Controller */,
+				B23B0F591B3BA026009E568A /* Model */,
+				B23B0F5C1B3BA026009E568A /* Tool */,
+				B23B0F5F1B3BA026009E568A /* View */,
+				B23B0F661B3BA026009E568A /* Widget */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B23B0F501B3BA026009E568A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F511B3BA026009E568A /* FYLoginManager.h */,
+				B23B0F521B3BA026009E568A /* FyLoginManager.m */,
+				B23B0F531B3BA026009E568A /* FYLoginVC.h */,
+				B23B0F541B3BA026009E568A /* FYLoginVC.m */,
+				B23B0F551B3BA026009E568A /* FYLoginVC.xib */,
+				B23B0F561B3BA026009E568A /* FYNewFeatureController.h */,
+				B23B0F571B3BA026009E568A /* FYNewFeatureController.m */,
+				B23B0F581B3BA026009E568A /* FYRegisterView.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B23B0F591B3BA026009E568A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F5A1B3BA026009E568A /* FYAccount.h */,
+				B23B0F5B1B3BA026009E568A /* FYAccount.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B23B0F5C1B3BA026009E568A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F5D1B3BA026009E568A /* FYAccountTool.h */,
+				B23B0F5E1B3BA026009E568A /* FYAccountTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		B23B0F5F1B3BA026009E568A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F601B3BA026009E568A /* FYTempLoginView.h */,
+				B23B0F611B3BA026009E568A /* FYTempLoginView.m */,
+				B23B0F621B3BA026009E568A /* FYTempLoginView.xib */,
+				B23B0F631B3BA026009E568A /* FYVerifyView.h */,
+				B23B0F641B3BA026009E568A /* FYVerifyView.m */,
+				B23B0F651B3BA026009E568A /* FYVerifyView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B23B0F661B3BA026009E568A /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F671B3BA026009E568A /* LXActionSheet */,
+				B23B0F6A1B3BA026009E568A /* ToggleView */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		B23B0F671B3BA026009E568A /* LXActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F681B3BA026009E568A /* LXActionSheet.h */,
+				B23B0F691B3BA026009E568A /* LXActionSheet.m */,
+			);
+			path = LXActionSheet;
+			sourceTree = "<group>";
+		};
+		B23B0F6A1B3BA026009E568A /* ToggleView */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F6B1B3BA026009E568A /* ToggleBase.h */,
+				B23B0F6C1B3BA026009E568A /* ToggleBase.m */,
+				B23B0F6D1B3BA026009E568A /* ToggleButton.h */,
+				B23B0F6E1B3BA026009E568A /* ToggleButton.m */,
+				B23B0F6F1B3BA026009E568A /* ToggleView.h */,
+				B23B0F701B3BA026009E568A /* ToggleView.m */,
+			);
+			path = ToggleView;
+			sourceTree = "<group>";
+		};
+		B23B0F711B3BA026009E568A /* MainFrame */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F721B3BA026009E568A /* Controller */,
+				B23B0F7A1B3BA026009E568A /* Model */,
+				B23B0F7C1B3BA026009E568A /* View */,
+				B23B0F811B3BA026009E568A /* Widget */,
+			);
+			path = MainFrame;
+			sourceTree = "<group>";
+		};
+		B23B0F721B3BA026009E568A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F731B3BA026009E568A /* FYFrameManager.h */,
+				B23B0F741B3BA026009E568A /* FYFrameManager.m */,
+				B23B0F751B3BA026009E568A /* FYLeftMenuVC.h */,
+				B23B0F761B3BA026009E568A /* FYLeftMenuVC.m */,
+				B23B0F771B3BA026009E568A /* FYMainVC.h */,
+				B23B0F781B3BA026009E568A /* FYMainVC.m */,
+				B23B0F791B3BA026009E568A /* FYMainVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B23B0F7A1B3BA026009E568A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F7B1B3BA026009E568A /* LeftMenu.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B23B0F7C1B3BA026009E568A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F7D1B3BA026009E568A /* FYHeadInfo.xib */,
+				B23B0F7E1B3BA026009E568A /* FYMainVCCell.h */,
+				B23B0F7F1B3BA026009E568A /* FYMainVCCell.m */,
+				B23B0F801B3BA026009E568A /* FYMainVCCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B23B0F811B3BA026009E568A /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		B23B0F821B3BA026009E568A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F831B3BA026009E568A /* Controller */,
+				B23B0F871B3BA026009E568A /* Model */,
+				B23B0F881B3BA026009E568A /* Widget */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B23B0F831B3BA026009E568A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F841B3BA026009E568A /* FYSettingHeaderVC.h */,
+				B23B0F851B3BA026009E568A /* FYSettingHeaderVC.m */,
+				B23B0F861B3BA026009E568A /* FYSettingHeaderVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B23B0F871B3BA026009E568A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B23B0F881B3BA026009E568A /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		B23B0F891B3BA026009E568A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F8A1B3BA026009E568A /* FYConstant.h */,
+				B23B0FFB1B3BA087009E568A /* FYMall-Prefix.pch */,
+				B23B0F8B1B3BA026009E568A /* Singleton.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B23B0F8C1B3BA026009E568A /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F8D1B3BA026009E568A /* Controller */,
+				B23B0F921B3BA026009E568A /* Model */,
+				B23B0F951B3BA026009E568A /* View */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		B23B0F8D1B3BA026009E568A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F8E1B3BA026009E568A /* FYNavigationController.h */,
+				B23B0F8F1B3BA026009E568A /* FYNavigationController.m */,
+				B23B0F901B3BA026009E568A /* FYViewController.h */,
+				B23B0F911B3BA026009E568A /* FYViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B23B0F921B3BA026009E568A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F931B3BA026009E568A /* FYBaseData.h */,
+				B23B0F941B3BA026009E568A /* FYBaseData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B23B0F951B3BA026009E568A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0F961B3BA026009E568A /* FYAnimationButton.h */,
+				B23B0F971B3BA026009E568A /* FYAnimationButton.m */,
+				B23B0F981B3BA026009E568A /* FYBaseCell.h */,
+				B23B0F991B3BA026009E568A /* FYBaseCell.m */,
+				B23B0F9A1B3BA026009E568A /* FYLikeButton.h */,
+				B23B0F9B1B3BA026009E568A /* FYLikeButton.m */,
+				B23B0F9C1B3BA026009E568A /* FYLineTextField.h */,
+				B23B0F9D1B3BA026009E568A /* FYLineTextField.m */,
+				B23B0F9E1B3BA026009E568A /* FYRoundRectButton.h */,
+				B23B0F9F1B3BA026009E568A /* FYRoundRectButton.m */,
+				B23B0FA01B3BA026009E568A /* FYRoundRectTextField.h */,
+				B23B0FA11B3BA026009E568A /* FYRoundRectTextField.m */,
+				B23B0FA21B3BA026009E568A /* FYTextField.h */,
+				B23B0FA31B3BA026009E568A /* FYTextField.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B23B0FA61B3BA026009E568A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B23B0FA71B3BA026009E568A /* FYNetwork.h */,
+				B23B0FA81B3BA026009E568A /* FYNetwork.m */,
+				B23B0FA91B3BA026009E568A /* FYStorage.h */,
+				B23B0FAA1B3BA026009E568A /* FYStorage.m */,
+				B23B0FAB1B3BA026009E568A /* FYtool.h */,
+				B23B0FAC1B3BA026009E568A /* FYtool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		CA77721C8CD91ECCBF0D28FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53158E93D2A782B439E94531 /* libPods-FYMall.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B23B0ED81B3B9DAD009E568A /* FYMall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23B0EFC1B3B9DAD009E568A /* Build configuration list for PBXNativeTarget "FYMall" */;
+			buildPhases = (
+				784A23DF7DA32FE35CF84CEE /* Check Pods Manifest.lock */,
+				B23B0ED51B3B9DAD009E568A /* Sources */,
+				B23B0ED61B3B9DAD009E568A /* Frameworks */,
+				B23B0ED71B3B9DAD009E568A /* Resources */,
+				BB33C110905700437264B519 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FYMall;
+			productName = FYMall;
+			productReference = B23B0ED91B3B9DAD009E568A /* FYMall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B23B0EF11B3B9DAD009E568A /* FYMallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23B0EFF1B3B9DAD009E568A /* Build configuration list for PBXNativeTarget "FYMallTests" */;
+			buildPhases = (
+				B23B0EEE1B3B9DAD009E568A /* Sources */,
+				B23B0EEF1B3B9DAD009E568A /* Frameworks */,
+				B23B0EF01B3B9DAD009E568A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B23B0EF41B3B9DAD009E568A /* PBXTargetDependency */,
+			);
+			name = FYMallTests;
+			productName = FYMallTests;
+			productReference = B23B0EF21B3B9DAD009E568A /* FYMallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B23B0ED11B3B9DAD009E568A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = childrenOurFuture;
+				TargetAttributes = {
+					B23B0ED81B3B9DAD009E568A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					B23B0EF11B3B9DAD009E568A = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = B23B0ED81B3B9DAD009E568A;
+					};
+				};
+			};
+			buildConfigurationList = B23B0ED41B3B9DAD009E568A /* Build configuration list for PBXProject "FYMall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B23B0ED01B3B9DAD009E568A;
+			productRefGroup = B23B0EDA1B3B9DAD009E568A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B23B0ED81B3B9DAD009E568A /* FYMall */,
+				B23B0EF11B3B9DAD009E568A /* FYMallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B23B0ED71B3B9DAD009E568A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23B0FB31B3BA026009E568A /* FYSearchMapVC.xib in Resources */,
+				B23B0FD81B3BA026009E568A /* FYRegisterView.xib in Resources */,
+				B23B0FE71B3BA026009E568A /* LeftMenu.plist in Resources */,
+				B23B0FD11B3BA026009E568A /* FYInfoCenterHeaderView.xib in Resources */,
+				B23B0FBD1B3BA026009E568A /* FYCommentView.xib in Resources */,
+				B23B0FC71B3BA026009E568A /* FYUserNicknameModifyVC.xib in Resources */,
+				B23B0FBF1B3BA026009E568A /* FYDinnerCommentCell1.xib in Resources */,
+				B23B0FD31B3BA026009E568A /* FYInfoRenderView.xib in Resources */,
+				B23B0EE81B3B9DAD009E568A /* Main.storyboard in Resources */,
+				B23B0FB11B3BA026009E568A /* FYDinnerVC.xib in Resources */,
+				B23B0FE81B3BA026009E568A /* FYHeadInfo.xib in Resources */,
+				B23B0EED1B3B9DAD009E568A /* LaunchScreen.xib in Resources */,
+				B23B0FB41B3BA026009E568A /* DinnerComment1.plist in Resources */,
+				B23B0FEA1B3BA026009E568A /* FYMainVCCell.xib in Resources */,
+				B23B0FB51B3BA026009E568A /* DinnerComment2.plist in Resources */,
+				B23B0FE61B3BA026009E568A /* FYMainVC.xib in Resources */,
+				B23B0FB61B3BA026009E568A /* DinnerList.plist in Resources */,
+				B23B0FCF1B3BA026009E568A /* FYInfoCenterCell.xib in Resources */,
+				B23B0FD61B3BA026009E568A /* FYLoginVC.xib in Resources */,
+				B23B0FDC1B3BA026009E568A /* FYTempLoginView.xib in Resources */,
+				B23B0FCB1B3BA026009E568A /* FYUserPhoneReset2VC.xib in Resources */,
+				B23B0FDE1B3BA026009E568A /* FYVerifyView.xib in Resources */,
+				B23B0EEA1B3B9DAD009E568A /* Images.xcassets in Resources */,
+				B23B0FEC1B3BA026009E568A /* FYSettingHeaderVC.xib in Resources */,
+				B23B0FC91B3BA026009E568A /* FYUserPhoneReset1VC.xib in Resources */,
+				B23B0FC21B3BA026009E568A /* FYDinnerCommentHeadView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23B0EF01B3B9DAD009E568A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		784A23DF7DA32FE35CF84CEE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB33C110905700437264B519 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FYMall/Pods-FYMall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B23B0ED51B3B9DAD009E568A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23B0FF91B3BA026009E568A /* FYStorage.m in Sources */,
+				B23B0FE91B3BA026009E568A /* FYMainVCCell.m in Sources */,
+				B23B0FD71B3BA026009E568A /* FYNewFeatureController.m in Sources */,
+				B23B0FAE1B3BA026009E568A /* UIImage+FY.m in Sources */,
+				B23B0FB71B3BA026009E568A /* FYAnnotation.m in Sources */,
+				B23B0FD51B3BA026009E568A /* FYLoginVC.m in Sources */,
+				B23B0FF51B3BA026009E568A /* FYRoundRectTextField.m in Sources */,
+				B23B0FF81B3BA026009E568A /* FYNetwork.m in Sources */,
+				B23B0FB91B3BA026009E568A /* FYDinner.m in Sources */,
+				B23B0FF41B3BA026009E568A /* FYRoundRectButton.m in Sources */,
+				B23B0FC51B3BA026009E568A /* FYUserInfoSettingTVC.m in Sources */,
+				B23B0FF11B3BA026009E568A /* FYBaseCell.m in Sources */,
+				B23B0FEB1B3BA026009E568A /* FYSettingHeaderVC.m in Sources */,
+				B23B0FDD1B3BA026009E568A /* FYVerifyView.m in Sources */,
+				B23B0FD41B3BA026009E568A /* FyLoginManager.m in Sources */,
+				B23B0FE01B3BA026009E568A /* ToggleBase.m in Sources */,
+				B23B0FE31B3BA026009E568A /* FYFrameManager.m in Sources */,
+				B23B0FBC1B3BA026009E568A /* FYCommentView.m in Sources */,
+				B23B0FE51B3BA026009E568A /* FYMainVC.m in Sources */,
+				B23B0FC81B3BA026009E568A /* FYUserPhoneReset1VC.m in Sources */,
+				B23B0FEE1B3BA026009E568A /* FYViewController.m in Sources */,
+				B23B0FCA1B3BA026009E568A /* FYUserPhoneReset2VC.m in Sources */,
+				B23B0FD01B3BA026009E568A /* FYInfoCenterHeaderView.m in Sources */,
+				B23B0FBE1B3BA026009E568A /* FYDinnerCommentCell1.m in Sources */,
+				B23B0EE21B3B9DAD009E568A /* AppDelegate.m in Sources */,
+				B23B0FAF1B3BA026009E568A /* FYDinnerCommentVC.m in Sources */,
+				B23B0FEF1B3BA026009E568A /* FYBaseData.m in Sources */,
+				B23B0FAD1B3BA026009E568A /* UIButton+FY.m in Sources */,
+				B23B0FB81B3BA026009E568A /* FYComment.m in Sources */,
+				B23B0FF61B3BA026009E568A /* FYTextField.m in Sources */,
+				B23B0FD21B3BA026009E568A /* FYInfoRenderView.m in Sources */,
+				B23B0FC11B3BA026009E568A /* FYDinnerCommentHeadView.m in Sources */,
+				B23B0FC41B3BA026009E568A /* FYInfoCenterVC.m in Sources */,
+				B23B0EDF1B3B9DAD009E568A /* main.m in Sources */,
+				B23B0FE11B3BA026009E568A /* ToggleButton.m in Sources */,
+				B23B0FFA1B3BA026009E568A /* FYtool.m in Sources */,
+				B23B0FF21B3BA026009E568A /* FYLikeButton.m in Sources */,
+				B23B0FCE1B3BA026009E568A /* FYInfoCenterCell.m in Sources */,
+				B23B0FF01B3BA026009E568A /* FYAnimationButton.m in Sources */,
+				B23B0FED1B3BA026009E568A /* FYNavigationController.m in Sources */,
+				B23B0FBA1B3BA026009E568A /* FYDinnerCommentCellFrame.m in Sources */,
+				B23B0FDF1B3BA026009E568A /* LXActionSheet.m in Sources */,
+				B23B0FE21B3BA026009E568A /* ToggleView.m in Sources */,
+				B23B0FCD1B3BA026009E568A /* FYInfoCenterAvatar.m in Sources */,
+				B23B0FDB1B3BA026009E568A /* FYTempLoginView.m in Sources */,
+				B23B0FCC1B3BA026009E568A /* FYUserInfo.m in Sources */,
+				B23B0FE41B3BA026009E568A /* FYLeftMenuVC.m in Sources */,
+				B23B0FC61B3BA026009E568A /* FYUserNicknameModifyVC.m in Sources */,
+				B23B0FC31B3BA026009E568A /* FYLineUpView.m in Sources */,
+				B23B0FDA1B3BA026009E568A /* FYAccountTool.m in Sources */,
+				B23B0FB01B3BA026009E568A /* FYDinnerVC.m in Sources */,
+				B23B0FB21B3BA026009E568A /* FYSearchMapVC.m in Sources */,
+				B23B0FC01B3BA026009E568A /* FYDinnerCommentCell2.m in Sources */,
+				B23B0FBB1B3BA026009E568A /* FYAdvertiseView.m in Sources */,
+				B23B0FF31B3BA026009E568A /* FYLineTextField.m in Sources */,
+				B23B0FD91B3BA026009E568A /* FYAccount.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23B0EEE1B3B9DAD009E568A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23B0EF91B3B9DAD009E568A /* FYMallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B23B0EF41B3B9DAD009E568A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B23B0ED81B3B9DAD009E568A /* FYMall */;
+			targetProxy = B23B0EF31B3B9DAD009E568A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B23B0EE61B3B9DAD009E568A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B23B0EE71B3B9DAD009E568A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B23B0EEB1B3B9DAD009E568A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B23B0EEC1B3B9DAD009E568A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B23B0EFA1B3B9DAD009E568A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B23B0EFB1B3B9DAD009E568A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B23B0EFD1B3B9DAD009E568A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515A0ACE464BD14E473F3868 /* Pods-FYMall.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FYMall/Other/FYMall-Prefix.pch";
+				INFOPLIST_FILE = FYMall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B23B0EFE1B3B9DAD009E568A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881968F57FE26683A2EF0B9A /* Pods-FYMall.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FYMall/Other/FYMall-Prefix.pch";
+				INFOPLIST_FILE = FYMall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B23B0F001B3B9DAD009E568A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FYMallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYMall.app/FYMall";
+			};
+			name = Debug;
+		};
+		B23B0F011B3B9DAD009E568A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FYMallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYMall.app/FYMall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B23B0ED41B3B9DAD009E568A /* Build configuration list for PBXProject "FYMall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23B0EFA1B3B9DAD009E568A /* Debug */,
+				B23B0EFB1B3B9DAD009E568A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23B0EFC1B3B9DAD009E568A /* Build configuration list for PBXNativeTarget "FYMall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23B0EFD1B3B9DAD009E568A /* Debug */,
+				B23B0EFE1B3B9DAD009E568A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23B0EFF1B3B9DAD009E568A /* Build configuration list for PBXNativeTarget "FYMallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23B0F001B3B9DAD009E568A /* Debug */,
+				B23B0F011B3B9DAD009E568A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B23B0ED11B3B9DAD009E568A /* Project object */;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>我的客服</string>
+		<key>image</key>
+		<string>women1</string>
+		<key>likeCount</key>
+		<integer>128</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>我的厨师</string>
+		<key>image</key>
+		<string>chishi1</string>
+		<key>likeCount</key>
+		<integer>58</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>我的账单</string>
+		<key>image</key>
+		<string>zhangdan1</string>
+		<key>likeCount</key>
+		<integer>128</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>我的消息</string>
+		<key>image</key>
+		<string>message1</string>
+		<key>likeCount</key>
+		<integer>168</integer>
+	</dict>
+</array>
+</plist>

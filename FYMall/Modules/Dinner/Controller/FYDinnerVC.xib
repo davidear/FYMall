@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FYDinnerVC">
+            <connections>
+                <outlet property="adView" destination="Ny3-3h-R4e" id="neY-Mf-3Eb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9N-kJ-YtF">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="52" id="nLU-fJ-Fsy"/>
+                        <constraint firstAttribute="height" constant="31" id="v8b-3d-ul2"/>
+                    </constraints>
+                    <state key="normal" image="位置cons">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="nLU-fJ-Fsy"/>
+                            <exclude reference="v8b-3d-ul2"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="nLU-fJ-Fsy"/>
+                            <include reference="v8b-3d-ul2"/>
+                        </mask>
+                    </variation>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离约30米" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4I-Ia-XPf">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.9882352941176471" green="0.53333333333333333" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="即将进入餐厅，15S后自动排队" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGx-XW-GkU">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="335" id="AvY-SC-ugU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="AvY-SC-ugU"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="AvY-SC-ugU"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwy-YP-Ajq" customClass="FYRoundRectButton">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.53333333329999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="HCn-hw-RC7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="需要服务">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HCn-hw-RC7"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="HCn-hw-RC7"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="callService:" destination="-1" eventType="touchUpInside" id="miD-56-NNB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7V-iE-fto" customClass="FYRoundRectButton">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.27058823529411763" green="0.76862745098039209" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="eMi-ng-2KC">
+                            <variation key="heightClass=regular-widthClass=compact" constant="44"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="手动排队">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="eMi-ng-2KC"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="eMi-ng-2KC"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="lineUp:" destination="-1" eventType="touchUpInside" id="ES1-PV-ywg"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ny3-3h-R4e" customClass="FYAdvertiseView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="155" id="aql-6V-jB2"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="aql-6V-jB2"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="aql-6V-jB2"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADh-oC-SX6">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="看看附近的其他餐厅">
+                        <color key="titleColor" red="0.98823529409999999" green="0.53333333329999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="searchAround:" destination="-1" eventType="touchUpInside" id="52P-4P-txe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="o4I-Ia-XPf" secondAttribute="centerX" id="0gU-qv-feg"/>
+                <constraint firstAttribute="centerX" secondItem="ADh-oC-SX6" secondAttribute="centerX" id="0jH-Su-wpW"/>
+                <constraint firstItem="o4I-Ia-XPf" firstAttribute="top" secondItem="N9N-kJ-YtF" secondAttribute="bottom" constant="8" id="25k-hH-jhW"/>
+                <constraint firstItem="Ny3-3h-R4e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2eJ-NT-KV3"/>
+                <constraint firstItem="O7V-iE-fto" firstAttribute="top" secondItem="PGx-XW-GkU" secondAttribute="bottom" constant="47" id="74i-Y6-GPW"/>
+                <constraint firstItem="Ny3-3h-R4e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9fP-vU-Xdl"/>
+                <constraint firstAttribute="centerX" secondItem="PGx-XW-GkU" secondAttribute="centerX" id="GK0-bP-w8R"/>
+                <constraint firstItem="PGx-XW-GkU" firstAttribute="top" secondItem="o4I-Ia-XPf" secondAttribute="bottom" constant="8" id="GWL-Ui-zSB"/>
+                <constraint firstAttribute="trailing" secondItem="Lwy-YP-Ajq" secondAttribute="trailing" constant="15" id="QtZ-Ok-Qbu"/>
+                <constraint firstAttribute="trailing" secondItem="Ny3-3h-R4e" secondAttribute="trailing" id="a6Q-bb-tAc"/>
+                <constraint firstItem="Lwy-YP-Ajq" firstAttribute="top" secondItem="O7V-iE-fto" secondAttribute="bottom" constant="20" id="cbq-Z8-BV0"/>
+                <constraint firstAttribute="bottom" secondItem="ADh-oC-SX6" secondAttribute="bottom" constant="20" id="iD8-aq-zmV"/>
+                <constraint firstItem="O7V-iE-fto" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="iOh-5E-Iak"/>
+                <constraint firstItem="Lwy-YP-Ajq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="l9b-IJ-Xwl"/>
+                <constraint firstAttribute="centerX" secondItem="N9N-kJ-YtF" secondAttribute="centerX" id="ret-da-DYc"/>
+                <constraint firstAttribute="trailing" secondItem="O7V-iE-fto" secondAttribute="trailing" constant="15" id="uWN-39-6d9"/>
+                <constraint firstItem="N9N-kJ-YtF" firstAttribute="top" secondItem="Ny3-3h-R4e" secondAttribute="bottom" constant="20" id="vUx-h5-yqB"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="N9N-kJ-YtF"/>
+                    <exclude reference="o4I-Ia-XPf"/>
+                    <exclude reference="PGx-XW-GkU"/>
+                    <exclude reference="Lwy-YP-Ajq"/>
+                    <exclude reference="O7V-iE-fto"/>
+                    <exclude reference="Ny3-3h-R4e"/>
+                    <exclude reference="ADh-oC-SX6"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="GK0-bP-w8R"/>
+                    <exclude reference="GWL-Ui-zSB"/>
+                    <exclude reference="0gU-qv-feg"/>
+                    <exclude reference="25k-hH-jhW"/>
+                    <exclude reference="0jH-Su-wpW"/>
+                    <exclude reference="iD8-aq-zmV"/>
+                    <exclude reference="QtZ-Ok-Qbu"/>
+                    <exclude reference="cbq-Z8-BV0"/>
+                    <exclude reference="l9b-IJ-Xwl"/>
+                    <exclude reference="ret-da-DYc"/>
+                    <exclude reference="vUx-h5-yqB"/>
+                    <exclude reference="74i-Y6-GPW"/>
+                    <exclude reference="iOh-5E-Iak"/>
+                    <exclude reference="uWN-39-6d9"/>
+                    <exclude reference="2eJ-NT-KV3"/>
+                    <exclude reference="9fP-vU-Xdl"/>
+                    <exclude reference="a6Q-bb-tAc"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="N9N-kJ-YtF"/>
+                    <include reference="o4I-Ia-XPf"/>
+                    <include reference="PGx-XW-GkU"/>
+                    <include reference="Lwy-YP-Ajq"/>
+                    <include reference="O7V-iE-fto"/>
+                    <include reference="Ny3-3h-R4e"/>
+                    <include reference="ADh-oC-SX6"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="GK0-bP-w8R"/>
+                    <include reference="GWL-Ui-zSB"/>
+                    <include reference="0gU-qv-feg"/>
+                    <include reference="25k-hH-jhW"/>
+                    <include reference="0jH-Su-wpW"/>
+                    <include reference="iD8-aq-zmV"/>
+                    <include reference="QtZ-Ok-Qbu"/>
+                    <include reference="cbq-Z8-BV0"/>
+                    <include reference="l9b-IJ-Xwl"/>
+                    <include reference="ret-da-DYc"/>
+                    <include reference="vUx-h5-yqB"/>
+                    <include reference="74i-Y6-GPW"/>
+                    <include reference="iOh-5E-Iak"/>
+                    <include reference="uWN-39-6d9"/>
+                    <include reference="2eJ-NT-KV3"/>
+                    <include reference="9fP-vU-Xdl"/>
+                    <include reference="a6Q-bb-tAc"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="461" y="522"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="位置cons" width="52" height="31"/>
+    </resources>
+</document>
