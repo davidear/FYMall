@@ -1111,6 +1111,7 @@
 			baseConfigurationReference = 515A0ACE464BD14E473F3868 /* Pods-FYMall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FYMall/Other/FYMall-Prefix.pch";
 				INFOPLIST_FILE = FYMall/Info.plist;
@@ -1124,6 +1125,7 @@
 			baseConfigurationReference = 881968F57FE26683A2EF0B9A /* Pods-FYMall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FYMall/Other/FYMall-Prefix.pch";
 				INFOPLIST_FILE = FYMall/Info.plist;
